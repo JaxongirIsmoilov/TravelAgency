@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+Route::get ('/index', ['uses' => 'MainController@show']);
+Route::get ('/blog', ['uses' => 'MainController@show2']);
