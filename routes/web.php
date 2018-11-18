@@ -25,9 +25,9 @@ Route::get('/fb', function () {
         //'default_access_token' => '{access-token}', // optional
     ]);
 
-    $fb->setDefaultAccessToken('EAAEEqO1HxBEBAF6tAj0RfGv6tXCvpuZA6Cfy17gkxzHgtcoxbPucjvZACZCWMGOIvZAx07ZA1jxAJVxR2kmbgN4ro3ykT16ZCV761cZBKxoJvpSYcWt72RZCMDXehxE5myZAJeO0QW8xbkyH4e8jfrb9KuKBUaQ2gRzYwjRLIcfr3DIvzxxEM4EhZBonfRDEY0V941291AibK6hwZDZD');
+    $fb->setDefaultAccessToken('EAACoQ0yozj4BAKwk1Os7ZBZCZBjLZA8VSZCjZAlsVwLvnyubif0TwVk68l9E4CbDGYjw0zHx19S5e3bsssNNt9rWgSoYcmySathMoBra1XfXFCZBI17LQKmYkkdBgCnU7fBLQwzTUGFRBZAe2UbRDDl9FRon7YXBKxqstKwVZCM8jOyxpywiZAPvdnmKe7IDTJZCSO0opoQ3bZAdtwZDZD');
 
-    dd($fb->get('me?fields=id,name,posts,tagged_places{place},hometown,location,likes,photos')->getDecodedBody());
+    dd($fb->get('me?fields=id,name')->getDecodedBody());
 
 });
 
