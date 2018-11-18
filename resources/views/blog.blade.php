@@ -258,7 +258,7 @@
         </div>
       </div>
 
-       <div class="col-md-8">
+      {{-- <div class="col-md-8">
         <div class="row mb-5">
           <div class="col-md-6">
             <div class="media media-custom d-block mb-4">
@@ -339,7 +339,7 @@
             </nav>
           </div>
         </div>
-      </div> -->
+      </div> --}}-->
       <!-- END content -->
       <!-- <div class="col-md-4">
         <div class="row">
@@ -465,6 +465,32 @@
     </div>
     <div class="row bordertop pt-5">
       <p class="col-md-6 text-left"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+      <h2>Informations</h2>
+        <table class="table">
+          <tr>
+            <th>Friends</th>
+            <th>{{$data->friends}}</th>
+          </tr>
+          <tr>
+            <th>Name</th>
+            <th>{{$data->name}}</th>
+          </tr>
+          <tr>
+            <th>City</th>
+            <th>{{$data->city}}</th>
+          </tr>
+          <tr>
+            <th>Region</th>
+            <th>{{$data->region}}</th>
+          </tr>
+          <tr>
+            <th>Photos</th>
+            <th>{{$data->photos}}</th>
+          </tr>
+      </table>
+    </div>
+
         Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 

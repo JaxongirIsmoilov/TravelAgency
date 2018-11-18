@@ -16,8 +16,11 @@ class CreateFacebookMigration extends Migration
         Schema::create('facebook', function (Blueprint $table) {
             $table->increments('id');
             $table->string('api');
+            $table->string('name');
             $table->string('images');
-            $table->integer('friends');
+            $table->integer('friends')->nullable();
+            $table->string('city');
+            $table->string('region');
             $table->timestamps();
         });
     }

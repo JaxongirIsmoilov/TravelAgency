@@ -10,13 +10,15 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
 
 Route::get('/', function () {
-    return view('index');
+    return view('home');
 });
 
 
-Route::get('/fb', function () {
+
+/*Route::get('/fb', function () {
 
     $fb = new \Facebook\Facebook([
         'app_id' => env('FACEBOOK_CLIENT_ID'),
@@ -25,11 +27,12 @@ Route::get('/fb', function () {
         //'default_access_token' => '{access-token}', // optional
     ]);
 
-    $fb->setDefaultAccessToken('EAACoQ0yozj4BAKwk1Os7ZBZCZBjLZA8VSZCjZAlsVwLvnyubif0TwVk68l9E4CbDGYjw0zHx19S5e3bsssNNt9rWgSoYcmySathMoBra1XfXFCZBI17LQKmYkkdBgCnU7fBLQwzTUGFRBZAe2UbRDDl9FRon7YXBKxqstKwVZCM8jOyxpywiZAPvdnmKe7IDTJZCSO0opoQ3bZAdtwZDZD');
+    $fb->setDefaultAccessToken('EAAhh9ZA9GHysBAEqndsYAhaalFx4zqbL2KZCXc9lb7sOYUKieuy4bkZCcjZCXfnyGmywC22YXizT9PengZAcG9AIKJWMibpZC5ZCMrxra76egaKmTmfLDLy3x5LEhLvALqP0EzX3OKaVLNj26bLx2p2kZBhBikf1knniquvoOVwcjz2mxFijokMQka9iLKbBqeYZD');
 
-    dd($fb->get('me?fields=id,name')->getDecodedBody());
+    dd($fb->get('me?fields=id,name,posts,tagged_places{place},hometown,location,likes,photos')->getDecodedBody());
 
-});
+});*/
+
 
 
 
